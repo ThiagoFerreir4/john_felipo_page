@@ -111,21 +111,26 @@
 		color:#fff;
 		text-transform:uppercase;
 		font-weight:600;
-	}
+		transition: 0.8s;
+        margin: 0 10px 0 0;
+        border-radius: 8%;
+}
+	
 	
 	.navbar-default .navbar-nav > li > a:hover,
 	.navbar-default .navbar-nav > li > a:focus,
 	.navbar-default .navbar-nav > li > a:active,
 	.navbar-default .navbar-nav > li > a.active {
-		color:#f5f5f5;
-		border: 1px dashed;
+		    background: none;
+    color: #FFFFFF;
+    box-shadow: inset 0 3px 9px 1px rgba(0, 0, 0, 0.55);
 	}
 	.navbar-default .navbar-nav > .active > a, 
 	.navbar-default .navbar-nav > .active > a:hover, 
 	.navbar-default .navbar-nav > .active > a:focus {
 		background:none;
-		border: 1px dashed #fff;
-		color: #FFFFFF;
+		 color: #FFFFFF;
+    box-shadow: inset 0 3px 9px 1px rgba(0, 0, 0, 0.55);
 	}
 	
 	.feature-img img {
@@ -2034,17 +2039,16 @@
 		z-index:999999; /* makes sure it stays on top */
 	}
 	.loader {
-		width:200px;
+		width:100%;
 		text-indent:-99999;
-		height:200px;
+		height:100%;
 		font-size:0;
 		position:absolute;
-		left:50%; /* centers the loading animation horizontally one the screen */
-		top:50%; /* centers the loading animation vertically one the screen */
-		background-image:url(images/loading.gif); /* path to your loading animation */
+		background-image:url(images/metaloader.gif); /* path to your loading animation */
 		background-repeat:no-repeat;
 		background-position:center;
-		margin:-100px 0 0 -100px; /* is width and height divided by two */
+		background-size: 100%;
+		margin:0; /* is width and height divided by two */
 	}
 	
 	
@@ -2070,6 +2074,10 @@
 	.navbar-default .navbar-nav > .active > a:focus,
 	.transparent .title h2 {
 		border-color:#F7C221;
+		background-color: #F7C221;
+		border-radius: 8%;
+		transition: 0s;
+		margin: 0 10px 0 0;
 	}
 	
 		
